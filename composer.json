@@ -1,0 +1,50 @@
+{
+    "name": "biiiiiigmonster/laravel-remote",
+    "description": "Laravel framework eloquent driver",
+    "type": "library",
+    "keywords": ["laravel", "orm", "trait"],
+    "authors": [
+        {
+            "name": "YunFeng Lu",
+            "email": "biiiiiigmonster@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^9.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.1",
+        "orchestra/testbench": "^7.7",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-laravel": "^1.2",
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "BiiiiiigMonster\\Remote\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BiiiiiigMonster\\Remote\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BiiiiiigMonster\\Remote\\RemoteServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": true
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
